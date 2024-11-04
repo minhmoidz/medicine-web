@@ -1,0 +1,69 @@
+.drugEntry {
+  display: flex;
+
+  .drugEntryContainer {
+    flex: 6;
+    padding: 20px;
+    background-color: #f8f9fa;
+    
+    .content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .entryForm {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .formItem {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 5px;
+          }
+
+          input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+
+            &:focus {
+              border-color: #007bff;
+            }
+          }
+        }
+
+        .submitButton {
+          background-color: #007bff;
+          color: #fff;
+          font-size: 16px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.2s;
+
+          &:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+          }
+        }
+      }
+    }
+  }
+}

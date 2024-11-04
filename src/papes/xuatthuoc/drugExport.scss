@@ -1,0 +1,122 @@
+.drug-export-container {
+    display: flex;
+    background-color: #f8f9fa;
+  
+    // Sidebar styling
+    .content {
+        flex: 6; // Chiếm không gian còn lại
+        padding: 10px;
+        margin: 0; 
+    }
+      .main-section {
+        flex: 1;
+        padding: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        h2 {
+          color: #333;
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+  
+        // Controls styling
+        .controls {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+  
+          input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 200px;
+          }
+  
+          button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+  
+            &:hover {
+              background-color: #218838;
+            }
+          }
+        }
+  
+        // Drug list styling
+        .drug-list {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 600px;
+  
+          .drug-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+  
+            span {
+              font-size: 1rem;
+              color: #333;
+              flex: 1;
+            }
+  
+            input[type="number"] {
+              width: 60px;
+              padding: 5px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              font-size: 1rem;
+              margin-right: 10px;
+            }
+  
+            button {
+              padding: 5px 10px;
+              background-color: #dc3545;
+              color: white;
+              border: none;
+              border-radius: 15px;
+              cursor: pointer;
+              transition: background-color 0.3s;
+  
+              &:hover {
+                background-color: #c82333;
+              }
+            }
+          }
+        }
+  
+        // Print button styling
+        .print-button {
+          margin-top: 20px;
+          padding: 12px 25px;
+          font-size: 1.2rem;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 25px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  
+  

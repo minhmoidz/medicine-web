@@ -100,5 +100,4 @@ const DrugEntry = () => {
     </div>
   );
 };
-
 export default DrugEntry;

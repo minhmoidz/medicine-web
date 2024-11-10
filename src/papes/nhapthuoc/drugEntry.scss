@@ -1,12 +1,18 @@
 .drugEntry {
-  display: flex;
-
+    display: flex;
+    position: absolute;
+    height: 100vh; 
+    margin-right: 100px; 
+    display: flex;
+    margin-right: -17px;  
   .drugEntryContainer {
     flex: 6;
     padding: 20px;
     background-color: #f8f9fa;
     
     .content {
+      position: relative;
+      width:1200px;
       background-color: #fff;
       padding: 30px;
       border-radius: 8px;

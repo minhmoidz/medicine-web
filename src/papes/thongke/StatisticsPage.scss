@@ -1,0 +1,13 @@
+.side {
+    display: flex;
+    margin-right: -17px;   
+    .navb {    
+        width: 100%;
+        .graph{
+            position:absolute;
+            width:60%;
+            height:100%;
+        }
+    }                    
+}
+

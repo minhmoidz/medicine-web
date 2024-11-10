@@ -76,10 +76,12 @@ const Sidebar = () => {
             </li>
           </Link>
           <p className="title">Số liệu</p>
-          <li>
-            <InsertChartIcon className="icon" />
-            <span>Thống kê</span>
-          </li>
+          <Link to="/thongke">
+            <li>
+              <InsertChartIcon className="icon" />
+              <span>Thống kê</span>
+            </li>
+          </Link>
           <li>
             <NotificationsNoneIcon className="icon" />
             <span>Phản hồi </span>

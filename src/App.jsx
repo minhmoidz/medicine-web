@@ -16,6 +16,7 @@ import { productInputs, userInputs } from "../formSource.jsx";
 import "../src/style/dark.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import css cho react-toastify
+import Phanhoi from "./papes/phanhoi/Phanhoi.jsx";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -53,6 +54,8 @@ function App() {
             <Route path="/xuatthuoc" element={<DrugExport />} />
             <Route path="/nhanvien" element={<EmployeeManagement />} />
             <Route path="/thongke" element={<StatisticsPage />} />
+            <Route path="/phanhoi" element={<Phanhoi />} />
+
           </Route>
         </Routes>
       </Router>

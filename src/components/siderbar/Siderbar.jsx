@@ -82,10 +82,12 @@ const Sidebar = () => {
               <span>Thống kê</span>
             </li>
           </Link>
-          <li>
-            <NotificationsNoneIcon className="icon" />
-            <span>Phản hồi </span>
-          </li>
+          <Link to="/phanhoi">
+            <li>
+              <NotificationsNoneIcon className="icon" />
+              <span>Phản hồi </span>
+            </li>
+          </Link>
           <p className="title">Dịch vụ</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />

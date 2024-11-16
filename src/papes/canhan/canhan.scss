@@ -1,0 +1,111 @@
+.inventory {
+display: flex;
+flex-wrap: wrap;
+}
+
+.Widget_widget {
+position: relative;
+display: block;
+height: 100%;
+border-radius: 8px;
+background: rgb(255, 255, 255);
+}
+
+.widget {
+padding: 24px;
+}
+
+.Profile_profile {
+background: #7a6ff6;//#7049fd
+border-radius: 8px;
+color: #ffffff;
+height: 100%;
+}  
+
+.username {
+display: flex !important;
+flex-direction: column;
+align-items: center;
+
+}
+
+.profile-info {
+margin-top: 20px;
+font-size: 14px;
+}
+
+.profile1 {
+margin-top: 30px;
+}
+
+img {
+border-style: none;
+}
+
+.headline-1 {
+font-size: 1.875rem;
+line-height: 42px;
+font-weight: bold;
+text-align: center;
+}
+.layout {
+display: flex;
+justify-content: space-between;
+padding: 24px 24px 68px;
+background-color: #f7f8fb;
+}
+
+.content-wrapper {
+display: flex;
+width: 100%;
+}//chia doi
+
+.left-content {
+flex: 1;
+margin-right: 5%;
+padding: 20px;
+height: 900px;
+}
+
+.right-profile {
+flex: 0 0 28%;
+background-color: #ffffff;
+border-radius: 8px;
+padding: 20px;
+height: 500px;
+background-color: #f7f8fb;
+border: 1px solid #e0e0e0;
+box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+margin: 0 auto;
+padding: 10px;
+text-align: center;
+
+}
+
+.achievements-table table{
+width: 100%;
+border-collapse: collapse;
+font-size: 19.2px;
+width: 100%;
+margin-top: 20px;
+
+
+}
+
+.achievements-table th, .achievements-table td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+border: none;
+
+}
+
+.achievements-table th {
+background-color: #f4f4f4;
+font-weight: bold;
+color: black;
+}
+

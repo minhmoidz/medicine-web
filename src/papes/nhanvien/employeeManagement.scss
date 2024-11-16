@@ -1,0 +1,82 @@
+.employee-management-container {
+    display: flex; // Sử dụng flexbox để sắp xếp sidebar và nội dung
+  
+    .content {
+      flex: 6; // Chiếm 1 phần không gian
+      padding: 10px;
+    }
+      .main-section {
+        margin-top: 20px;
+  
+        .controls {
+          margin-bottom: 20px;
+  
+          input {
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid rgb(73, 58, 58);
+            border-radius: 5px;
+          }
+  
+          button {
+            padding: 10px 15px;
+            background-color: #28a745; // Màu xanh cho nút thêm
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: #218838; // Màu xanh đậm khi hover
+            }
+          }
+        }
+  
+        .employee-list {
+          display: flex;
+          flex-wrap: wrap; // Sắp xếp các mục theo hàng
+          gap: 20px; // Khoảng cách giữa các mục
+  
+          .employee-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: calc(33% - 20px); // Chiếm 1/3 chiều rộng
+  
+            img {
+              width: 100%; // Đảm bảo hình ảnh chiếm toàn bộ chiều rộng
+              border-radius: 5px; // Bo góc cho hình ảnh
+            }
+  
+            h4 {
+              margin: 10px 0; // Khoảng cách phía trên và dưới tiêu đề
+            }
+  
+            button {
+              margin-right: 10px;
+              padding: 5px 10px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+  
+              &:nth-of-type(1) { // Nút sửa
+                background-color: #ffc107; // Màu vàng
+                &:hover {
+                  background-color: #e0a800; // Màu vàng đậm khi hover
+                }
+              }
+  
+              &:nth-of-type(2) { // Nút xóa
+                background-color: #dc3545; // Màu đỏ
+                &:hover {
+                  background-color: #c82333; // Màu đỏ đậm khi hover
+                }
+              }
+            }
+          }
+        }
+      }
+    
+  }
+  

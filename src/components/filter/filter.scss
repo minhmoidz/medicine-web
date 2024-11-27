@@ -1,0 +1,36 @@
+.filter {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  
+    .filterTitle {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+  
+    .filterGroup {
+      margin-bottom: 15px;
+  
+      .filterLabel {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+      }
+  
+      .filterInput,
+      .filterSelect {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  

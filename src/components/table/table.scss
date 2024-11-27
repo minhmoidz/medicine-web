@@ -1,0 +1,40 @@
+.table {
+  .actionContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+  }
+  
+  .actionContainer button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  
+    .cellWrapper {
+      display: flex;
+      align-items: center;
+  
+      .image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+    }
+  
+    .status {
+      padding: 10px;
+      border-radius: 7px;
+  
+      &.Approved {
+        color: green;
+        background-color: rgba(0, 128, 0, 0.151);
+      }
+      &.Pending {
+        color: goldenrod;
+        background-color: rgba(189, 189, 3, 0.103);
+      }
+    }
+  }

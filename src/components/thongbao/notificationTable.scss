@@ -1,0 +1,127 @@
+.notificationTable {
+  padding: 20px;
+
+  .notificationCard {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .card {
+      flex: 1;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: rgb(15, 7, 7);
+      font-size: 18px;
+      font-weight: bold;
+
+      &.expired {
+        background-color: #ec7265;
+      }
+
+      &.expiringSoon {
+        background-color: #f7df80;
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+  }
+
+  .filterSection {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa input và button */
+    margin-bottom: 20px;
+  
+    input {
+      flex: 1; /* Đặt chiều rộng linh hoạt, input chiếm tối đa không gian trống */
+      max-width: 400px; /* Giới hạn chiều rộng tối đa */
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  
+
+  .medicationTable {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+      }
+
+      th {
+        background-color: #f4f4f4;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+    }
+    // notificationTable.scss
+
+  .status-expired {
+    background-color: #ffcccc; // Đỏ nhạt
+    color: #a70000;           // Đỏ đậm
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+
+  .status-expiring-soon {
+    background-color: #fff2cc; // Vàng nhạt
+    color: #a67900;           // Vàng đậm
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+
+
+    .actionButton {
+      display: inline-block;
+      padding: 6px 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}

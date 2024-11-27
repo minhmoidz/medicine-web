@@ -1,0 +1,46 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fb;
+  padding: 20px;
+  min-height: 100vh; // Đảm bảo màn hình luôn đủ chiều cao
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; // Cho phép bố cục phân chia linh hoạt khi thu nhỏ màn hình
+}
+
+.left-content,
+.right-profile {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+// Chia tỷ lệ giữa hai phần tử khi có màn hình rộng
+.left-content {
+  flex: 2;
+  min-width: 320px; // Đảm bảo phần bên trái không quá nhỏ khi thu nhỏ
+}
+
+.right-profile {
+  flex: 1;
+  min-width: 320px; // Đảm bảo phần bên phải cũng có độ rộng tối thiểu
+}
+
+// Responsive design cho các màn hình nhỏ hơn
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column; // Chuyển sang bố cục theo chiều dọc cho màn hình nhỏ
+    gap: 10px; // Giảm khoảng cách giữa các phần tử
+  }
+  
+  .left-content,
+  .right-profile {
+    width: 100%; // Đảm bảo mỗi phần chiếm hết chiều rộng của màn hình
+    min-width: 100%;
+  }
+}

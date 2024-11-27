@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:radial-gradient(circle at 50% 100% ,#262b2f,#000);
+
+}
+
+@keyframes open{
+    0%, 20%, 80%, 100% {margin-top: 0;}
+    30%, 70% {margin-top: 10vmin;}
+}
+
+.pill .side{
+    background: #f7c340;
+    position: relative;
+    overflow: hidden;
+    width: 11vmin;
+    height: 15vmin;
+    border-radius:6vmin 6vmin 0 0;
+}
+
+.pill .side + .side{
+    background:#d9680c;
+    border-radius: 0 0 6vmin 6vmin;
+    border-top: 1vmin solid #621e1a;
+    animation: open 2s ease-in-out 0s infinite;
+    
+
+
+}

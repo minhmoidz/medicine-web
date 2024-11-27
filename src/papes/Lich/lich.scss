@@ -1,0 +1,45 @@
+/* Cấu hình Sidebar */
+.sidebar {
+  position: fixed; /* Cố định Sidebar */
+  top: 0;
+  left: 0;
+  width: 300px; /* Chiều rộng cố định của Sidebar */
+  height: 100vh; /* Chiều cao bằng toàn bộ màn hình */
+  background-color: #fff;
+  color: #fff;
+  z-index: 100; /* Đảm bảo Sidebar nằm trên các phần tử khác */
+  padding-top: 15px; /* Khoảng cách từ trên cùng */
+}
+
+/* Cấu hình Navbar */
+.navbar {
+  position: fixed;  /* Cố định Navbar */
+  top: 0;            /* Đặt Navbar ở trên cùng */
+  left: 350px;       /* Đặt Navbar bắt đầu sau Sidebar (250px) */
+  right: 0;          /* Kéo dài tới mép phải của màn hình */
+  height: 140px;      /* Chiều cao của Navbar */
+  background-color: #fff; /* Màu nền của Navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Bóng đổ cho Navbar */
+  z-index: 101; /* Đảm bảo Navbar nằm trên Sidebar */
+  display: flex;
+  align-items: center;
+  padding: 0 10px;  /* Khoảng cách trong Navbar */
+  font-size: 30px;
+  color: #555;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+}
+
+/* Cấu hình phần Content */
+.listContainer {
+  margin-left: 330px; /* Đẩy nội dung sang phải để không bị che khuất bởi Sidebar */
+  margin-top: 140px;   /* Đẩy nội dung xuống dưới Navbar */
+  padding: 20px;
+  overflow: hidden;   /* Đảm bảo phần nội dung không bị tràn ra ngoài */
+}

@@ -1,0 +1,123 @@
+/* Container chứa 2 khung */
+.featured-container {
+  display: flex;
+  justify-content: space-between; /* Đặt các khung cạnh nhau */
+  gap: 20px; /* Khoảng cách giữa 2 khung */
+  width: 100%; /* Đảm bảo khung chiếm hết chiều rộng */
+}
+
+/* Cả hai khung sẽ có tỉ lệ bằng nhau */
+.featured-box {
+  flex: 1; /* Mỗi khung chiếm 50% chiều rộng */
+  display: flex;
+  flex-direction: column; /* Để các phần tử trong khung xếp dọc */
+  justify-content: space-between; /* Đặt các phần tử vào giữa */
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47); /* Hiệu ứng bóng */
+  border-radius: 20px;
+  padding: 10px;
+  height: 100%; /* Đảm bảo chiều cao bằng nhau */
+}
+
+.chart-container, .details-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  svg {
+    cursor: pointer;
+    color: #888;
+    &:hover {
+      color: #555;
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.featuredChart {
+  width: 120px;
+  height: 120px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745;
+  strong {
+    color: #007bff;
+  }
+}
+
+.desc {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+}
+
+.summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    .itemTitle {
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .itemResult {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 16px;
+
+      &.positive {
+        color: #28a745;
+      }
+
+      &.negative {
+        color: #dc3545;
+      }
+
+      .resultAmount {
+        font-weight: bold;
+      }
+
+      svg {
+        font-size: 18px;
+      }
+    }
+  }
+}

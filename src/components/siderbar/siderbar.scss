@@ -1,0 +1,106 @@
+.sidebar {
+  flex: 1;
+  border-right: 1px solid rgb(230, 227, 227);
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 23px;
+
+  .top {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #6439ff;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 1px solid rgb(230, 227, 227);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #999;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 12px; // Tăng padding cho mục
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 8px; // Bo góc cho mục
+        transition: all 0.3s; // Thêm hiệu ứng cho mọi thay đổi
+
+        &:hover {
+          background-color: #ece8ff; // Màu nền khi hover
+          transform: scale(1.05); // Tăng kích thước khi hover
+        }
+
+        &.active {
+          background-color: #d3d3ff; // Màu nền cho trang đang được chọn
+          font-weight: bold; // Làm cho văn bản nổi bật hơn
+        }
+
+        .icon {
+          font-size: 30px; // Tăng kích thước biểu tượng
+          color: #7451f8;
+        }
+
+        span {
+          font-size: 30px; // Tăng kích thước chữ cho văn bản
+          font-weight: 600;
+          color: #888;
+          margin-left: 15px; // Tăng khoảng cách trái cho văn bản
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .colorOption {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      border: 1px solid #7451f8;
+      cursor: pointer;
+      margin: 5px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1); // Tăng kích thước khi hover
+      }
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(2) {
+        background-color: #333;
+      }
+      &:nth-child(3) {
+        background-color: darkblue;
+      }
+    }
+  }
+}

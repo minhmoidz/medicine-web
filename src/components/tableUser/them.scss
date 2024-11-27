@@ -1,0 +1,134 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+  
+    h3 {
+      font-size: 1.8rem;
+      color: #333333;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  
+      td {
+        padding: 10px;
+        vertical-align: top;
+  
+        &:first-child {
+          font-weight: bold;
+          color: #555555;
+          text-align: left;
+          width: 30%;
+        }
+  
+        &:last-child {
+          input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+          }
+  
+          span {
+            font-size: 1rem;
+            color: #333333;
+          }
+        }
+      }
+    }
+  
+    .modal-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+  
+      button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        &.editButton {
+          background-color: #3498db;
+          color: #ffffff;
+  
+          &:hover {
+            background-color: #2980b9;
+          }
+        }
+  
+        &.deleteButton {
+          background-color: #e74c3c;
+          color: #ffffff;
+  
+          &:hover {
+            background-color: #c0392b;
+          }
+        }
+  
+        &.update {
+          background-color: #2ecc71;
+          color: #ffffff;
+  
+          &:hover {
+            background-color: #27ae60;
+          }
+        }
+  
+        &.cancel {
+          background-color: #f39c12;
+          color: #ffffff;
+  
+          &:hover {
+            background-color: #e67e22;
+          }
+        }
+  
+        &.close {
+          background-color: #7f8c8d;
+          color: #ffffff;
+  
+          &:hover {
+            background-color: #606060;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

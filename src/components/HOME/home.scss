@@ -1,0 +1,74 @@
+.home {
+    display: flex;
+  
+    /* Loading overlay */
+    .loadingContainer {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: radial-gradient(circle at 50% 100%, #434649, rgb(90, 84, 84));
+    }
+  
+    .loadingMessage {
+      font-size: 16px;
+      color: white;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    /* Hiệu ứng progress bar */
+    .progress-bar-container {
+      width: 80%;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin-top: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  
+    .progress-bar {
+      width: 50%; /* Đổi thành giá trị động để phản ánh quá trình tải */
+      height: 100%;
+      background-color: #0fe66c;
+      animation: progressBar 2.5s linear forwards;
+    }
+  
+    @keyframes progressBar {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+  }
+  
+  .homeContainer {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    opacity: 1; /* Đảm bảo nội dung trong suốt khi loading */
+  
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      border-radius: 100px;
+    }
+    .listContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+  
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  
